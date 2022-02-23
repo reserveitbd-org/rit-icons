@@ -1,10 +1,14 @@
 import React from 'react'
-
-import { ExampleComponent } from 'rit-icons'
-import 'rit-icons/dist/index.css'
+import { Signout } from 'rit-icons'
 
 const App = () => {
-  return <ExampleComponent text="Create React Library Example 😄" />
+  return (
+    <>
+      <div style={{ fontSize: '2rem' }}>
+        <Signout />
+      </div>
+    </>
+  )
 }
 
 export default App
