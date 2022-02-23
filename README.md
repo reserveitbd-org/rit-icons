@@ -13,16 +13,20 @@ npm install --save rit-icons
 ## Usage
 
 ```jsx
-import React, { Component } from 'react'
+import React from 'react'
+import { Signout } from 'rit-icons'
 
-import MyComponent from 'rit-icons'
-import 'rit-icons/dist/index.css'
-
-class Example extends Component {
-  render() {
-    return <MyComponent />
-  }
+const App = () => {
+  return (
+    <>
+      <div style={{ fontSize: '2rem' }}>
+        <Signout />
+      </div>
+    </>
+  )
 }
+
+export default App
 ```
 
 ## License
