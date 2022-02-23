@@ -2,7 +2,7 @@
   "name": "rit-icons",
   "version": "1.0.0",
   "description": "React Icon Library for Reserveit",
-  "author": "tam11a",
+  "author": "tam11a <ibrahimsadiktamim@gmail.com> (https://github.com/tam11a)",
   "license": "MIT",
   "repository": "tam11a/rit-icons",
   "main": "dist/index.js",
