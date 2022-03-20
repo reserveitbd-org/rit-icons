@@ -2,19 +2,23 @@ import * as React from "react";
 
 const SvgChair = ({ title, titleId, ...props }) => (
   <svg
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 512 512"
     width="1em"
     height="1em"
-    viewBox="0 0 192 192"
-    fill="none"
-    xmlns="http://www.w3.org/2000/svg"
     aria-labelledby={titleId}
     {...props}
   >
     {title ? <title id={titleId}>{title}</title> : null}
-    <path
-      d="M44.139 128.667v-19.334h104.194V148h-19.555v-19.333H63.694V148H44.14v-19.333Zm97.778-51.657h19.555v19.334h-19.555V77.01ZM31 77.01h19.556v19.334H31V77.01Zm97.778 19.334H63.694V44.99c0-3.625 1.274-6.697 3.82-9.214C70.06 33.259 73.064 32 76.528 32h39.111c3.667 0 6.773 1.259 9.319 3.776 2.547 2.517 3.82 5.589 3.82 9.214v51.354Z"
-      fill="#401B60"
-    />
+    <defs>
+      <style>{".chair_svg__cls-1{fill:#707070}"}</style>
+    </defs>
+    <g id="chair_svg__Layer_5" data-name="Layer 5">
+      <path
+        className="chair_svg__cls-1"
+        d="M51.3 512V344.62h410.36V512h-75v-84.74H130.21V512ZM0 198.44h74.05v83.91H0ZM130.48 280.86c0-78.56-.58-155 .32-231.48.31-26.5 22.31-48.33 47.86-48.73 52.58-.82 105.19-.93 157.76 0 26 .48 47.62 22.44 48.12 51.36 1.29 75.63.43 151.31.43 228.81ZM439.26 281.23V200.3H512v80.93Z"
+      />
+    </g>
   </svg>
 );
 
