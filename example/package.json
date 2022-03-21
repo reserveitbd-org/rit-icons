@@ -10,8 +10,13 @@
     "eject": "node ../node_modules/react-scripts/bin/react-scripts.js eject"
   },
   "dependencies": {
+    "@emotion/react": "^11.8.2",
+    "@emotion/styled": "^11.8.1",
+    "@mui/material": "^5.5.1",
     "react": "file:../node_modules/react",
+    "react-copy-to-clipboard": "5.0.4",
     "react-dom": "file:../node_modules/react-dom",
+    "react-icons": "^4.3.1",
     "react-scripts": "file:../node_modules/react-scripts",
     "rit-icons": "file:.."
   },
