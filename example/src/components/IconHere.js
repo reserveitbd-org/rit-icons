@@ -1,20 +1,16 @@
 import React from 'react'
 import {
   Alert,
-  AppBar,
-  Box,
   Button,
   Dialog,
   DialogContent,
   DialogTitle,
   Divider,
-  Fab,
   Grid,
   IconButton,
   Paper,
   Snackbar,
   Stack,
-  Toolbar,
   Typography
 } from '@mui/material'
 import { CopyToClipboard } from 'react-copy-to-clipboard'
@@ -46,8 +42,8 @@ const IconHere = ({ i }) => {
     >
       <CopyToClipboard text={i.label} onCopy={handleClose}>
         <Paper
-          component={Button}
-          color={'white'}
+          // component={Button}
+          // color={'white'}
           // disableRipple
           sx={{
             position: 'relative',

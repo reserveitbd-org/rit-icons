@@ -4,26 +4,30 @@ import { CopyToClipboard } from 'react-copy-to-clipboard'
 
 const Code = ({ children, ...others }) => {
   const [open, setOpen] = React.useState(false)
+  const [btnText, setBtnText] = React.useState('COPY')
   const handleClose = () => {
     setOpen(!open)
+    setBtnText('COPIED!!')
   }
   return (
     <Stack
       sx={{
         background: '#00000011',
-        px: 2,
-        py: 2,
+        p: 2,
+        // py: 2,
         my: 2
       }}
       direction={'row'}
-      alignItems={'center'}
+      alignItems={'flex-start'}
       justifyContent={'space-between'}
       {...others}
     >
-      <code style={{ flexGrow: 1 }}>{children}</code>
+      <code style={{ flexGrow: 1 }}>
+        <pre style={{ margin: 0 }}>{children}</pre>
+      </code>
       <CopyToClipboard text={children} onCopy={handleClose}>
         <Button variant={'contained'} size={'small'}>
-          COPY
+          {btnText}
         </Button>
       </CopyToClipboard>
       <Snackbar open={open} autoHideDuration={2000} onClose={handleClose}>
